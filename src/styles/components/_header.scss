@@ -1,0 +1,155 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: $header-background;
+    box-sizing: border-box;
+    z-index: 100;
+
+    &.fixed {
+        box-shadow: $header-shadow;
+    }
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1520px;
+        height: 87px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .nav-item {
+        color: $dark;
+        font-size: 1rem;
+        font-weight: 400;
+        background-image: none;
+        cursor: pointer;
+
+        &:hover {
+            color: $gray-slate-secondary;
+        }
+
+        .logo {
+            width: 200px;
+            margin: 0;
+
+            @media screen and (max-width: 1024px) {
+                width: 160px;
+            }
+
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+        }
+
+        .small-logo {
+            display: none;
+
+            &.hide {
+                display: none;
+            }
+
+            @media screen and (max-width: 600px) {
+                display: inline-block;
+                position: relative;
+                top: -13px;
+            }
+        }
+    }
+
+    .navigation {
+        flex: 1;
+        padding: 42px;
+
+        .navbar-menu {
+            display: flex;
+            align-items: center;
+            width: 470px;
+            height: 25px;
+            letter-spacing: 0.4px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    .buttons-container {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .button {
+            position: relative;
+            margin: 0 5px;
+            transition: all 0.5s ease;
+
+            &.appear {
+                opacity: 1;
+            }
+        }
+
+        .fixed-position {
+            opacity: 0;
+        }
+
+        .front {
+            width: 150px;
+        }
+
+        &.hidden {
+            visibility: hidden;
+        }
+
+        .not-displayed {
+            display: none;
+        }
+
+        .side-navigation {
+            display: none;
+        }
+
+        @media screen and (max-width: 1280px) {
+            .fixed-position {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .log-in {
+                &.front {
+                    border: none;
+                    box-shadow: none;
+                    width: inherit;
+                }
+            }
+
+            .get-started-button {
+                width: 150px;
+                margin-right: 15px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .get-started-button {
+                position: fixed;
+                left: 15px;
+                top: 7px;
+                width: 120px;
+                padding: 0;
+            }
+
+            .log-in {
+                position: relative;
+                top: -15px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 60px;
+        padding-bottom: 0;
+    }
+}

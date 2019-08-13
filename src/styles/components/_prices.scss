@@ -1,0 +1,206 @@
+.prices-header-deck {
+    .prices-title {
+        max-width: 903px;
+        margin: 10px auto 35px;
+        font-family: Exo2;
+        font-weight: 700;
+        line-height: 1.42;
+        color: $articles-title;
+        text-align: center;
+    }
+
+    .card-image {
+        max-width: 400px;
+        margin-bottom: 15px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .prices-cta-header {
+        margin: 20px 0;
+        color: $dark;
+        font-family: Exo2;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.63px;
+        text-align: center;
+    }
+
+    .prices-cta-body {
+        margin-bottom: 20px;
+        color: $articles-title;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0.42px;
+    }
+
+    .push-to-right {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .section-title {
+        font-family: Roboto;
+        font-size: 2.5rem;
+        line-height: 1.3;
+        letter-spacing: 0.37px;
+        color: $dark;
+
+        .not-bold {
+            font-weight: 300;
+        }
+    }
+
+    .prices-card-container {
+        width: 300px;
+        margin: 0 10px;
+        box-shadow: 0 2px 4px 0 rgba(121, 129, 137, 0.41);
+        border-radius: 12px;
+        background-color: $plain-white;
+
+        .prices-card {
+            padding: 30px 25px 45px;
+            border-radius: 12px;
+
+            &.logo {
+                max-width: 200px;
+                margin: 0 auto;
+                padding-bottom: 20px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &.body {
+                min-height: 490px;
+                padding-top: 0;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+            .free-text {
+                margin-top: 20px;
+                font-family: Roboto;
+                font-size: 50px;
+                font-weight: 700;
+                text-align: center;
+                color: $link-color;
+
+                .starting-at {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 0.875rem;
+                    font-weight: 300;
+                }
+            }
+
+            .appStore {
+                margin-right: 12px;
+            }
+
+            .contact-us-button {
+                width: 100%;
+                height: 45px;
+                margin: 50px 0 40px;
+            }
+
+            .prices-card-list {
+                width: 100%;
+                min-height: 250px;
+                color: $articles-title;
+                font-family: Roboto;
+                font-weight: 300;
+                line-height: 1.88;
+
+                .list-item {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        width: 15px;
+                        margin: 0 17px 0 0;
+                        color: #25a318;
+                    }
+                }
+            }
+        }
+
+        .gray-bg-color {
+            padding: 10px;
+            color: $link-description;
+            text-align: center;
+            border: solid 1px rgba(193, 196, 199, 0.44);
+            background-color: #e6ebef;
+            font-family: Roboto;
+            font-size: 0.75rem;
+            letter-spacing: 0.32px;
+
+            &.white {
+                height: 35px;
+                background-color: $plain-white;
+                border: none;
+                border-top: solid 1px rgba(193, 196, 199, 0.44);
+            }
+        }
+    }
+
+    @media screen and (max-width: 1055px) {
+        .prices-card-container {
+            margin: 10px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .card-image {
+            padding: 0 20px;
+        }    
+        
+        .prices-cta-body {
+            display: none;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+
+            .not-bold {
+                display: block;
+            }
+        }
+
+        .prices-card-container {
+            margin: 10px 0;
+
+            .features-button {
+                margin: 0 0 10px;
+                box-shadow: none;
+                color: $link-description;
+            }
+
+            .prices-card {
+                padding: 25px 25px 0;
+
+                &.logo {
+                    width: 160px;
+                }
+
+                &.body {
+                    min-height: unset;
+
+                    .contact-us-button {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .prices-card-list {
+                    min-height: unset;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

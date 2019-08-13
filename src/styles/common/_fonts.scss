@@ -1,0 +1,140 @@
+$roboto-directory: "../assets/fonts/Roboto/";
+$Exo2-directory: "../assets/fonts/Exo2/";
+$IconFont-directory: "../assets/fonts/IconFont/";
+$roboto: "Roboto", sans-serif;
+$Exo2: "Exo2", sans-serif;
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    src: url("#{$roboto-directory}Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url("#{$roboto-directory}Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    src: url("#{$roboto-directory}Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    src: url("#{$roboto-directory}Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-weight: 300;
+    src: url("#{$Exo2-directory}Exo2-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-weight: 400;
+    src: url("#{$Exo2-directory}Exo2-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-weight: 500;
+    src: url("#{$Exo2-directory}Exo2-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Exo2";
+    font-weight: 700;
+    src: url("#{$Exo2-directory}Exo2-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'shipcars-icons';
+    src:  url('#{$IconFont-directory}shipcars-icons.eot?2h2zs0');
+    src:  url('#{$IconFont-directory}shipcars-icons.eot?2h2zs0#iefix') format('embedded-opentype'),
+      url('#{$IconFont-directory}shipcars-icons.ttf?2h2zs0') format('truetype'),
+      url('#{$IconFont-directory}shipcars-icons.woff?2h2zs0') format('woff'),
+      url('#{$IconFont-directory}shipcars-icons.svg?2h2zs0#shipcars-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  [class^="icon-"],
+  [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'shipcars-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-shipcars-logo:before {
+    content: '\e908';
+  }
+
+  .icon-shipcars-icon:before {
+    content: '\e909';
+  }
+
+  .icon-shipper-icon:before {
+    content: '\e90a';
+  }
+
+  .icon-carrier-icon:before {
+    content: '\e90b';
+  }
+
+  .icon-market-icon:before {
+    content: '\e90c';
+  }
+
+  .icon-driver-icon:before {
+    content: '\e90d';
+  }
+
+  .icon-calcatron-icon:before {
+    content: '\e90e';
+  }
+
+  .icon-chevron-left:before {
+    content: '\e900';
+  }
+
+  .icon-chevron-right:before {
+    content: '\e901';
+  }
+
+  .icon-done:before {
+    content: '\e902';
+  }
+
+  .icon-facebook:before {
+    content: "\e903";
+  }
+
+  .icon-instagram:before {
+    content: "\e904";
+  }
+
+  .icon-linkedin:before {
+    content: "\e905";
+  }
+
+  .icon-rss:before {
+    content: "\e906";
+  }
+
+  .icon-twitter:before {
+    content: "\e907";
+  }

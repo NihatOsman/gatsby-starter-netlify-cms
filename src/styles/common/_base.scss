@@ -1,0 +1,254 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background: #fff;
+}
+
+.page-padding {
+    padding-top: 100px;
+}
+
+figure {
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1520px;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    &.padding-top-s {
+        padding-top: 25px;
+    }
+
+    &.padding-top-m {
+        padding-top: 50px;
+    }
+
+    &.padding-top-l {
+        padding-top: 100px;
+    }
+
+    &.padding-top-xl {
+        padding-top: 200px;
+    }
+
+    &.padding-bottom-s {
+        padding-bottom: 25px;
+    }
+
+    &.padding-bottom-m {
+        padding-bottom: 50px;
+    }
+
+    &.padding-bottom-l {
+        padding-bottom: 100px;
+    }
+
+    &.padding-bottom-xl {
+        padding-bottom: 200px;
+    }
+
+    &.carousel-wrapper {
+        padding-top: 100px;
+
+        @media screen and (max-width: 1280px) {
+            padding: 0 40px 100px;
+        }
+    }
+}
+
+.light-gray {
+    display: flex;
+    width: 100%;
+    background-color: #e6ebef;
+}
+
+.gray-wrapper {
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
+.product-logo {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-family: "Exo2", sans-serif;
+    font-size: 3.313rem;
+    line-height: 1.33;
+
+    .title,
+    .subtitle {
+        display: block;
+    }
+
+    .title {
+        font-weight: 300;
+    }
+
+    .subtitle {
+        font-weight: 700;
+    }
+}
+
+h2 {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: grey;
+    font-family: "Exo2";
+    font-size: 3.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+strong{
+    font-weight: 700;
+}
+
+.animated {
+    width: 100%;
+    transition-duration: 1.5s;
+}
+
+.background {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        // background-image: url("../assets/grid.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        z-index: -1;
+    }
+
+    &.left:before {
+        background-position: right bottom;
+        transform: rotate(180deg);
+    }
+
+    &.middle:before {
+        background-position: right center;
+        transform: rotate(180deg);
+    }
+}
+
+.story-deck-background {
+    // background-image: url(../assets/about/background-circle-graphic-icons.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.values-deck-background {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 130px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        // background-image: url(../assets/about/background-circle-graphic.svg);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page-padding {
+        padding-top: 60px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 2.1875rem;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        line-height: 1.42;
+    }
+
+    .wrapper {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-width: 1520px;
+        padding: 0 15px;
+        margin: 0 auto;
+
+        &.padding-top-m {
+            padding-top: 25px;
+        }
+
+        &.padding-top-l {
+            padding-top: 60px;
+        }
+
+        &.padding-top-xl {
+            padding-top: 80px;
+        }
+
+        &.padding-bottom-m {
+            padding-bottom: 25px;
+        }
+
+        &.padding-bottom-l {
+            padding-bottom: 60px;
+        }
+
+        &.padding-bottom-xl {
+            padding-bottom: 80px;
+        }
+
+        &.carousel-wrapper {
+            padding: 0 0 50px;
+        }
+    }
+
+    .gray-wrapper {
+        padding: 0 0 40px;
+    }
+
+    .product-logo {
+        display: none;
+    }
+
+    .values-deck-background {
+        .card {
+            background-color: transparent;
+        }
+
+        &:before {
+            top: 0;
+            // background-image: url(../assets/about/background-circle-graphic-mobile.svg);
+            background-position: center right;
+        }
+    }
+}
+
+.MuiSelect-select.MuiSelect-selectMenu.MuiInputBase-input.MuiInput-input {
+    &:focus {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}

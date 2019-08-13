@@ -1,0 +1,136 @@
+.footer {
+    margin-top: 140px auto;
+    padding: 80px 90px;
+    color: $snow;
+    background-color: $dark;
+
+    .connect {
+        .logo {
+            width: 220px;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .address {
+            margin-bottom: 20px;
+        }
+    }
+
+    .contacts {
+        color: $contacts;
+    }
+
+    .address::first-line,
+    a,
+    .rights {
+        color: $rigts;
+    }
+
+    p,
+    a {
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+
+    .footer-links {
+        .categories-title {
+            margin: 0 auto 20px;
+            color: $snow;
+            font-size: 1.125rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        a {
+            display: block;
+            font-size: 1rem;
+            text-shadow: none;
+            background-image: none;
+            line-height: 1.63;
+
+            &:hover {
+                color: $snow;
+            }
+        }
+    }
+
+    .social-media-container {
+        margin-top: 80px;
+
+        ul {
+            li {
+                display: inline-block;
+
+                & + li {
+                    margin-left: 6px;
+                }
+
+                a {
+                    width: 42px;
+                    height: 42px;
+                    border: 1px solid rgba(205, 213, 220, .4);
+                    padding: 13px;
+
+                    span {
+                        color: $plain-white;
+                        font-size: 13px;
+                    }
+
+                    &:hover {
+                        border: 1px solid $plain-white;
+                        background-color: $facebook-icon-background;
+                    }
+                }
+            }
+        }
+    }
+
+    .rights {
+        margin: 40px auto 173px;
+        letter-spacing: normal;
+
+        .privacy {
+            color: $privacy;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        text-align: center;
+        padding: 56px 45px;
+
+        .footer-links {
+            margin-top: 53px;
+        }
+
+        .tablet-hidden {
+            display: none;
+        }
+
+        .rights {
+            margin: 38px auto 170px;
+            font-size: 0.875rem;
+            line-height: 1.86;
+
+            .privacy {
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 56px 30px;
+
+        .mobile-hidden{
+            display: none;
+        }
+
+        .footer-links {
+            margin-top: 58px;
+        }
+
+        .rights {
+            margin: 28px auto 180px;
+        }
+    }
+}

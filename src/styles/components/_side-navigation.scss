@@ -1,0 +1,199 @@
+.mobile-nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 20px;
+    cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+        display: flex;
+    }
+
+    @media screen and (max-width: 600px) {
+        position: relative;
+        top: -15px;
+    }
+}
+
+.side-nav {
+    width: 250px;
+
+    .close-icon {
+        margin: 15px;
+        cursor: pointer;
+    }
+    
+    .side-nav-menu{
+        text-transform: uppercase;
+    }
+}
+
+.side-nav-selected-menu {
+    background-color: #e6ebef99 !important;
+}
+
+.side-nav-list-item {
+    .item-text {
+        font-size: 0.875rem;
+    }
+
+    .img-wrapper {
+        width: 37px;
+        height: 37px;
+        margin-right: 17px;
+        background-size: cover;
+        transition: all 0.3s ease;
+
+        &.calcatron {
+            background-image: url(../assets/icons/icon-dropdown-calcatron.svg);
+        }
+        &.carrier {
+            background-image: url(../assets/icons/icon-dropdown-carrier.svg);
+        }
+        &.driver {
+            background-image: url(../assets/icons/icon-dropdown-driver.svg);
+        }
+        &.market {
+            background-image: url(../assets/icons/icon-dropdown-market.svg);
+        }
+        &.shipper {
+            background-image: url(../assets/icons/icon-dropdown-shipper.svg);
+        }
+        &.about {
+            background-image: url(../assets/icons/icon-dropdown-about.svg);
+        }
+        &.prices {
+            background-image: url(../assets/icons/icon-dropdown-prices.svg);
+        }
+        &.careers {
+            background-image: url(../assets/icons/icon-dropdown-careers.svg);
+        }
+        &.contact-us {
+            background-image: url(../assets/icons/icon-dropdown-contact-us.svg);
+        }
+        &.carriers-drivers {
+            background-image: url(../assets/icons/icon-dropdown-carriers-drivers.svg);
+        }
+        &.cogs {
+            background-image: url(../assets/icons/icon-color-cogs.svg);
+        }
+        &.check {
+            background-image: url(../assets/icons/icon-color-check-squared.svg);
+        }
+        &.upload {
+            background-image: url(../assets/icons/icon-color-upload.svg);
+        }
+        &.sitemap {
+            background-image: url(../assets/icons/icon-color-sitemap.svg);
+        }
+        &.analytics {
+            background-image: url(../assets/icons/icon-analytics.svg);
+        }
+    }
+
+    &:hover {
+        .img-wrapper {
+            &.calcatron {
+                background-image: url(../assets/icons/icon-dropdown-color-calcatron.svg);
+            }
+            &.carrier {
+                background-image: url(../assets/icons/icon-dropdown-color-carrier.svg);
+            }
+            &.driver {
+                background-image: url(../assets/icons/icon-dropdown-color-driver.svg);
+            }
+            &.market {
+                background-image: url(../assets/icons/icon-dropdown-color-market.svg);
+            }
+            &.shipper {
+                background-image: url(../assets/icons/icon-dropdown-color-shipper.svg);
+            }
+            &.about {
+                background-image: url(../assets/icons/icon-dropdown-color-about.svg);
+            }
+            &.prices {
+                background-image: url(../assets/icons/icon-dropdown-color-prices.svg);
+            }
+            &.careers {
+                background-image: url(../assets/icons/icon-dropdown-color-careers.svg);
+            }
+            &.contact-us {
+                background-image: url(../assets/icons/icon-dropdown-color-contact-us.svg);
+            }
+            &.carriers-drivers {
+                background-image: url(../assets/icons/icon-dropdown-color-carriers-drivers.svg);
+            }
+            &.cogs {
+                background-image: url(../assets/icons/icon-color-cogs.svg);
+            }
+            &.check {
+                background-image: url(../assets/icons/icon-color-check-squared.svg);
+            }
+            &.upload {
+                background-image: url(../assets/icons/icon-color-upload.svg);
+            }
+            &.sitemap {
+                background-image: url(../assets/icons/icon-color-sitemap.svg);
+            }
+            &.analytics {
+                background-image: url(../assets/icons/icon-analytics.svg);
+            }
+        }
+    }
+}
+
+.active {
+    .side-nav-list-item {
+        padding-left: 12px;
+        background-color: #cbd4db33;
+        border-left: 4px solid $purple-primary;
+
+        .img-wrapper {
+            &.calcatron {
+                background-image: url(../assets/icons/icon-dropdown-color-calcatron.svg);
+            }
+            &.carrier {
+                background-image: url(../assets/icons/icon-dropdown-color-carrier.svg);
+            }
+            &.driver {
+                background-image: url(../assets/icons/icon-dropdown-color-driver.svg);
+            }
+            &.market {
+                background-image: url(../assets/icons/icon-dropdown-color-market.svg);
+            }
+            &.shipper {
+                background-image: url(../assets/icons/icon-dropdown-color-shipper.svg);
+            }
+            &.about {
+                background-image: url(../assets/icons/icon-dropdown-color-about.svg);
+            }
+            &.prices {
+                background-image: url(../assets/icons/icon-dropdown-color-prices.svg);
+            }
+            &.careers {
+                background-image: url(../assets/icons/icon-dropdown-color-careers.svg);
+            }
+            &.contact-us {
+                background-image: url(../assets/icons/icon-dropdown-color-contact-us.svg);
+            }
+            &.carriers-drivers {
+                background-image: url(../assets/icons/icon-dropdown-color-carriers-drivers.svg);
+            }
+            &.cogs {
+                background-image: url(../assets/icons/icon-color-cogs.svg);
+            }
+            &.check {
+                background-image: url(../assets/icons/icon-color-check-squared.svg);
+            }
+            &.upload {
+                background-image: url(../assets/icons/icon-color-upload.svg);
+            }
+            &.sitemap {
+                background-image: url(../assets/icons/icon-color-sitemap.svg);
+            }
+            &.analytics {
+                background-image: url(../assets/icons/icon-analytics.svg);
+            }
+        }
+    }
+}

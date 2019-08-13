@@ -1,0 +1,66 @@
+.reviews-wrapper {
+    .img-wrapper {
+        position: relative;
+        width: 30.4px;
+        height: 23.6px;
+        margin: 0 auto;
+        background-image: url(../assets/icons/icon-testimonials-quote.svg);
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 11px;
+            width: 225px;
+            height: 2px;
+            opacity: 0.2;
+            background-color: $plain-white;
+        }
+
+        &:before {
+            right: 50px;
+        }
+
+        &:after {
+            left: 50px;
+        }
+
+        @media screen and (max-width: 600px) {
+            &:before,
+            &:after {
+                width: 130px;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            &:before,
+            &:after {
+                width: 105px;
+            }
+        }
+    }
+
+    .review {
+        .review-author {
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-align: center;
+            color: $plain-white;
+        }
+
+        .review-comment {
+            font-size: 1.938rem;
+            line-height: 1.26;
+            text-align: center;
+            color: $steel;
+            margin: 35px 0 25px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .review-comment,
+            .review-comment {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.social-media-container {
+    margin-top: 50px;
+
+    ul {
+        li {
+            display: inline-block;
+
+            & + li {
+                margin-left: 12px;
+            }
+
+            a {
+                display: block;
+                font-size: 0;
+                padding: 6px;
+                border: 1px solid $link-description;
+                background-color: $transparent;
+                border-radius: 50%;
+                text-align: center;
+                transition: all .3s ease;
+
+                span {
+                    color: $link-description;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

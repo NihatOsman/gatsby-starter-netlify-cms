@@ -1,0 +1,195 @@
+.dropdown {
+    position: relative;
+    margin-right: 42px;
+
+    &:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        left: -90px;
+        z-index: 1;
+        display: none;
+        min-width: 250px;
+        padding: 30px 0;
+
+        .triangle-with-shadow {
+            position: absolute;
+            top: 0;
+            left: 100px;
+            z-index: 2;
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+        }
+
+        .triangle-with-shadow:after {
+            position: absolute;
+            top: 21px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            background: $plain-white;
+            box-shadow: $drop-down-triangle-shadow;
+            transform: rotate(-45deg);
+            content: "";
+        }
+
+        .content {
+            position: relative;
+            min-width: 383px;
+            max-width: 400px;
+            padding: 20px 0;
+            background-color: $plain-white;
+            border-radius: 5px;
+            box-shadow: $drop-down-shadow;
+
+            &.company {
+                min-width: 245px;
+                width: 250px;
+
+                .link-title {
+                    padding: 10px 0;
+                }
+
+                .learn-more {
+                    display: none;
+                }
+
+                .content-wrapper {
+                    &:hover .link-title {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+        .content-wrapper {
+            .link-title,
+            .link-description,
+            .learn-more {
+                display: block;
+            }
+
+            &:hover {
+                .link-title {
+                    margin-top: -20px;
+                }
+
+                // .img-wrapper {
+                //     &.calcatron {
+                //         background-image: url(../assets/icons/icon-dropdown-color-calcatron.svg);
+                //     }
+                //     &.carrier {
+                //         background-image: url(../assets/icons/icon-dropdown-color-carrier.svg);
+                //     }
+                //     &.driver {
+                //         background-image: url(../assets/icons/icon-dropdown-color-driver.svg);
+                //     }
+                //     &.market {
+                //         background-image: url(../assets/icons/icon-dropdown-color-market.svg);
+                //     }
+                //     &.shipper {
+                //         background-image: url(../assets/icons/icon-dropdown-color-shipper.svg);
+                //     }
+                //     &.about {
+                //         background-image: url(../assets/icons/icon-dropdown-color-about.svg);
+                //     }
+                //     &.prices {
+                //         background-image: url(../assets/icons/icon-dropdown-color-prices.svg);
+                //     }
+                //     &.careers {
+                //         background-image: url(../assets/icons/icon-dropdown-color-careers.svg);
+                //     }
+                //     &.contact-us {
+                //         background-image: url(../assets/icons/icon-dropdown-color-contact-us.svg);
+                //     }
+                //     &.carriers-drivers {
+                //         background-image: url(../assets/icons/icon-dropdown-color-carriers-drivers.svg);
+                //     }
+                // }
+            }
+
+            // .img-wrapper {
+            //     width: 37px;
+            //     height: 37px;
+            //     transition: all 0.3s ease;
+
+            //     &.calcatron {
+            //         background-image: url(../assets/icons/icon-dropdown-calcatron.svg);
+            //     }
+            //     &.carrier {
+            //         background-image: url(../assets/icons/icon-dropdown-carrier.svg);
+            //     }
+            //     &.driver {
+            //         background-image: url(../assets/icons/icon-dropdown-driver.svg);
+            //     }
+            //     &.market {
+            //         background-image: url(../assets/icons/icon-dropdown-market.svg);
+            //     }
+            //     &.shipper {
+            //         background-image: url(../assets/icons/icon-dropdown-shipper.svg);
+            //     }
+            //     &.about {
+            //         background-image: url(../assets/icons/icon-dropdown-about.svg);
+            //     }
+            //     &.prices {
+            //         background-image: url(../assets/icons/icon-dropdown-prices.svg);
+            //     }
+            //     &.careers {
+            //         background-image: url(../assets/icons/icon-dropdown-careers.svg);
+            //     }
+            //     &.contact-us {
+            //         background-image: url(../assets/icons/icon-dropdown-contact-us.svg);
+            //     }
+            //     &.carriers-drivers {
+            //         background-image: url(../assets/icons/icon-dropdown-carriers-drivers.svg);
+            //     }
+            // }
+
+            .link-info {
+                max-width: calc(100% - 37px);
+                height: 40px;
+                padding: 0 10px;
+                overflow: hidden;
+
+                .link-title {
+                    padding-bottom: 5px;
+                    color: $dark;
+                    font-size: 1.063rem;
+                    letter-spacing: 0.4px;
+                    transition: margin 0.4s ease;
+                }
+
+                .link-description {
+                    margin-bottom: 3px;
+                    color: $link-description;
+                    font-size: 0.75rem;
+                    letter-spacing: 0.3px;
+                    line-height: 1.42;
+                }
+
+                .learn-more {
+                    color: $link-color;
+                    font-size: 0.75rem;
+                    font-weight: 700;
+                    letter-spacing: 0.3px;
+                    line-height: 1.42;
+                }
+
+                &.use-case {
+                    height: 60px;
+                }
+            }
+        }
+
+        a {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 15px;
+            color: $dark;
+            text-decoration: none;
+        }
+    }
+}

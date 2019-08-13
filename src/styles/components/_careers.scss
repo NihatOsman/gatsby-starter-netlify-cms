@@ -1,0 +1,149 @@
+.career-page {
+    .carrer-title {
+        max-width: 550px;
+        margin-left: 170px;
+        font-family: Roboto;
+        font-size: 45px;
+        line-height: 1.24;
+        letter-spacing: 1.19px;
+        color: $plain-white;
+
+        .bold-text {
+            font-weight: 700;
+            letter-spacing: 1.22px;
+        }
+    }
+
+    .usp-description {
+        max-width: 400px;
+        margin: 0 15px;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0.42px;
+        color: #3f4a54;
+    }
+
+    .title {
+        width: unset;
+    }
+
+    .usp-container {
+        max-width: 450px;
+        margin: 20px 50px;
+
+        .usp-image {
+            width: 125px;
+            height: 125px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .usp-header {
+            max-width: 290px;
+            margin-left: 5px;
+            font-size: 20px;
+            line-height: 1.5;
+            letter-spacing: 0.29px;
+            color: #3f4a54;
+        }
+    }
+
+    .careers-iframe {
+        max-width: 900px;
+        margin: 0 auto;
+
+        iframe {
+            margin-top: 35px;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        .usp-container {
+            margin: 20px 0;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        .carrer-title {
+            max-width: 430px;
+            margin: 0 auto;
+            font-size: 35px;
+        }
+
+        .usp-deck {
+            flex-wrap: nowrap;
+        }
+
+        .usp-description {
+            max-width: initial;
+            margin: 0 15px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .carrer-title {
+            max-width: 265px;
+            font-size: 17px;
+            line-height: 2;
+            letter-spacing: 0.45px;
+        }
+
+        .title {
+            margin-bottom: 30px;
+        }
+
+        .usp-deck {
+            flex-wrap: wrap;
+        }
+
+        .usp-description {
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+
+        .usp-container {
+            max-width: unset;
+            width: 100%;
+            margin: 20px auto;
+
+            .usp-image {
+                width: 75px;
+                height: 75px;
+            }
+
+            .usp-header {
+                max-width: unset;
+                text-align: center;
+                margin: 10px 0 0;
+            }
+        }
+
+        .careers-iframe {
+            max-width: 900px;
+            margin: 0 auto;
+
+            iframe {
+                margin-top: 35px;
+            }
+        }
+
+        .careers-iframe iframe {
+            margin-top: 0;
+        }
+    }
+}
+
+.background-image {
+    // background-image: url('');
+    max-width: 1440px;
+    padding: 50px 0;
+    background-color: #3b3c42;
+    border-radius: 12px;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        border-radius: 0;
+    }
+}

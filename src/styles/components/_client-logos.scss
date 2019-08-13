@@ -1,0 +1,28 @@
+.client-logos-container {
+    padding: 100px 0 0;
+
+    .client-logo {
+        display: inline-flex;
+        max-width: 210px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1280px) {
+        padding: 85px 0 0;
+
+        .client-logo {
+            height: 110px;
+
+            img {
+                display: inline;
+                width: initial;
+                max-height: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        padding: 45px 0 55px;
+    }
+}

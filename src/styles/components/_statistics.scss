@@ -1,0 +1,29 @@
+.number-box {
+    display: inline-block;
+    padding: 40px 0;
+    text-align: center;
+
+    .number {
+        color: $plain-white;
+        font-family: "Exo2", sans-serif;
+        font-size: 5.625rem;
+        font-weight: 700;
+        letter-spacing: 2.4px;
+    }
+
+    .text {
+        padding: 20px 0;
+        color: $steel;
+        font-size: 1.125rem;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-bottom: 0;
+    }
+}

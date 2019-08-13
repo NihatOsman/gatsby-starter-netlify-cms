@@ -1,0 +1,171 @@
+.product-info-wrapper {
+    .image {
+        max-width: 600px;
+        min-height: 450px;
+        margin: 0 auto;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .product-title {
+        margin: 0 0 20px;
+        font-size: 1.875rem;
+        font-family: 'Roboto';
+        font-weight: 500;
+        line-height: 1.47;
+        letter-spacing: 0.1px;
+        text-align: left;
+    }
+
+    .product-description {
+        font-size: 1rem;
+        color: $articles-title;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0.4px;
+
+        &.description-list {
+            margin-top: 30px;
+            display: block;
+            column-count: 2;
+
+            &.one-col {
+                column-count: 1;
+            }
+
+            .list-item {
+                display: flex;
+                align-items: flex-start;
+                margin: 0 0 20px;
+
+                svg {
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+    }
+
+    .product-info {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 980px) {
+        .image {
+            min-height: initial;
+            margin-bottom: 30px;
+        }
+
+        .product-info {
+            max-width: 600px;
+            padding: 0 20px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+        }
+
+        .product-description {
+            font-size: 0.875rem;
+        }
+
+        .product-info {
+            padding: 0;
+
+            .description-list {
+                margin-top: 20px;
+                column-count: 1;
+
+                .list-item {
+                    margin: 0 0 10px;
+                }
+            }
+        }
+    }
+}
+
+.related-products-deck {
+    .container-title {
+        font-size: 30px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        line-height: 1.47;
+        letter-spacing: 0.1px;
+    }
+
+    .product-title {
+        margin: 0 20px;
+        font-size: 1.25rem;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+    }
+
+    .product-description {
+        margin: 20px 0;
+    }
+
+    .product-info {
+        max-width: 405px;
+        margin-bottom: 70px;
+    }
+
+    .button {
+        margin: 0;
+        padding: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+        .product-info {
+            max-width: 100%;
+        }
+    }
+}
+
+.use-case-benefits {
+    .product-title {
+        margin: 50px 0;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+
+        .links {
+            font-size: 0.8125rem;
+
+            a {
+                color: #5a96e5;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .product-title {
+            margin: 25px 0;
+        }
+    }
+
+    .product-description {
+        max-width: 800px;
+        margin-bottom: 20px;
+        color: $articles-title;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0.4px;
+
+        .bold {
+            font-weight: 500;
+            color: $dark;
+        }
+    }
+}

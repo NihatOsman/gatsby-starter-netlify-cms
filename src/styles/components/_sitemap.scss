@@ -1,0 +1,71 @@
+.sitemap {
+    .title {
+        color: $articles-title;
+        font-weight: 700;
+    }
+
+    .subheadline {
+        color: $articles-title;
+        font-size: 1.4375rem;
+        font-weight: 300;
+        letter-spacing: 0.34px;
+    }
+
+    .content {
+        max-width: 1250px;
+        margin: 0 auto;
+        
+        .menu {
+            max-width: 290px;
+            margin: 30px auto;
+        }
+
+        .category {
+            max-width: 290px;
+            margin: 25px 0;
+            color: #323031;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .page-link {
+            max-width: 253px;
+            margin: 12px 0 15px;
+            color: $articles-title;
+            font-weight: 300;
+        }
+
+        .divider {
+            margin: 0 15px 0 0;
+        }
+    }
+
+    @media screen and (max-width: 599px) {
+        .title {
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+
+        .subheadline {
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
+        
+        .product-image {
+            margin-top: 10px;
+        }
+
+        .content {
+            width: 100%;
+            margin: 0;
+
+            .menu {
+                max-width: unset;
+            }
+
+            .divider {
+                margin: 0;
+            }
+        }
+    }
+}
