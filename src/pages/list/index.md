@@ -1,6 +1,6 @@
 ---
 templateKey: list-page
-title: Ship cars
+title: Ship carss
 ---
 ### Move Loads
 
