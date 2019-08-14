@@ -70,6 +70,8 @@ const headerCongif = [
     open: false,
     menu: [
       { title: 'About', icon: 'about', to: '/about' },
+      { title: 'List', icon: 'list', to: '/list' },
+
       { title: 'Prices', icon: 'prices', to: '/prices' },
       { title: 'Careers', icon: 'careers', to: '/careers' },
       { title: 'Contact', icon: 'contact-us', to: '/' }
